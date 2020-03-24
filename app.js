@@ -23,8 +23,28 @@ const messages = [
     }
 ];
 
-app.get('/', (rep, res) => res.send('The app is running!'));
+app.get('/', (req, res) => res.send('The app is running!'));
 
-app.get('/messages', (rep, res) => res.json(messages))
+app.get('/messages', (req, res) => res.json(messages));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+// ~/messages/2
+app.get('/messages/:id', (req, res) => {
+    let id = parseInt(req.params.id);
+    let flag = false;
+
+    for(let i = 0; i < messages.length; i++) {
+        if(messages[i].id === id) {
+            res.json(messages[i]);
+            flag = true;
+            break;
+        };
+    };
+
+    if(!flag) {
+        res.send('Can not find any messages with ID');
+    };
+});
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`)
+});
