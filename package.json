@@ -1,0 +1,23 @@
+{
+  "name": "vsonline-nodejs-app",
+  "version": "1.0.0",
+  "description": "Node.js Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interceptor128/vsonline-nodejs-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interceptor128/vsonline-nodejs-app/issues"
+  },
+  "homepage": "https://github.com/interceptor128/vsonline-nodejs-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
