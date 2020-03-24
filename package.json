@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/interceptor128/vsonline-nodejs-app.git"
   },
-  "author": "",
+  "author": "interceptor128",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/interceptor128/vsonline-nodejs-app/issues"
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/interceptor128/vsonline-nodejs-app#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
   }
 }
