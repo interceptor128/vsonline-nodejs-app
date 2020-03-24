@@ -33,7 +33,7 @@ app.get('/messages/:id', (req, res) => {
     };
 });
 
-app.get('/messages', (req, res) => {
+app.post('/messages', (req, res) => {
     let body = req.body;
     let new_message = {
         id: id++,
